@@ -192,7 +192,7 @@ document.getElementById("report").onclick = async () => {
         reportNotes: document.getElementById("notes").value + " -- via browser extension",
         threatType: document.getElementById("radio-url").checked ? "URL" : "IP Address",
         incidentType: document.getElementById("incident_type").value,
-        //"testSubmission": true
+        "testSubmission": true
     }
 
     if (document.getElementById("radio-url").checked)
