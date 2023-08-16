@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>MSRC abuse reporting extension</title>
+    <link rel="stylesheet" href="libs/jquery-ui.min.css">
+    <link rel="stylesheet" href="libs/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="libs/jquery-ui.theme.min.css">
+    <style>
+        body {
+          min-width: 325px;
+          position: relative;
+          vertical-align:middle;
+          height: auto;
+        }
+
+        #main {
+            margin-right: 1em;
+        }
+
+        #ErrorText {
+            margin-right: 1em;
+        }
+
+        #nameField {
+            width: 100%;
+        }
+
+        #emailField {
+            width: 100%;
+        }
+
+        #indicator {
+            width: 100%;
+        }
+
+        #incident_type_box
+        {
+            display: flex;
+            align-items: center;
+        }
+
+        #incident_type_label {
+            margin-right: 10px;
+        }
+
+        #incident_type {
+            flex: 1;
+        }
+
+        textarea {
+            width: 100%;
+        }
+    </style>
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script src="libs/jquery-ui.min.js"></script>
+    <script src="api/entityextraction.js"></script>
+    <script src="api/validation.js"></script>
+</head>
+<body>
+    <div id="ErrorText">
+        <p>Set your contact information, used so that MSRC can get in contact with you</p>
+        <label for="nameField">Name:</label>
+        <input type="text" id="nameField" name="nameField"><br/>
+        <br/>
+        <label for="emailField">Email:</label>
+        <input type="text" id="emailField" name="emailField"><br/>
+        <br/>
+        <button id="set-button">Set</button>
+
+        <br/>
+        <label id="validationMessage"></label>
+    </div>
+    <div id="main">
+        <input type="text" name="indicator" id="indicator">
+        <br/>
+        <br/>
+
+            <label for="radio-ip">IP</label>
+            <input type="radio" name="radio-1" id="radio-ip">
+            <label for="radio-url">URL</label>
+            <input type="radio" name="radio-1" id="radio-url">
+
+        <br/>
+        <br/>
+
+        <div id="incident_type_box">
+            <label id="incident_type_label" for="incident_type">Incident type</label>
+            <select name="incident_type" id="incident_type">
+            </select>
+        </div>
+
+        <br/>
+
+        <label for="notes">Notes</label>
+        <textarea id="notes"></textarea>
+
+        <br/>
+        <br/>
+        <button id="report">Report</button>
+        <button id="hiddenButton" style="height: 5px; width: 5px; margin-left: 260px; font-size:0px; background: transparent; border: none !important; "></button>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
