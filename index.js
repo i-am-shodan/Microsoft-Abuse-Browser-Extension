@@ -167,7 +167,7 @@ document.getElementById("report").onclick = async () => {
 
     if (document.getElementById("report").style.backgroundColor == "red")
     {
-        var confirmed = window.confirm("This doesn't look like a Microsoft indicator, still want to proceed?");
+        var confirmed = window.confirm("This doesn't look like a Microsoft hosted IP or URL, still want to proceed?");
   
         if (!confirmed) {
             return;

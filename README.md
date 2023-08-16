@@ -1,5 +1,5 @@
-# Microsoft abuse browser extension
-Microsoft abuse browser extension is an open source browser extension for Chrome and Edge that allows you to report malicious URLs or IP addresses using the public MSRC abuse API. You can use it by either selecting some text on the page and clicking the browser extension button or just clicking the browser extension button (in which case it will use the active tab's current URL). You can then select the type of abuse report and click the report button to send it to MSRC.
+# Microsoft abuse, browser extension
+This repository contains the code for a browser extension that can be used to report malicious IP/URLs to Microsoft. It is an unofficial open source browser extension for Chrome and Edge that allows you to report malicious URLs or IP addresses using the public MSRC abuse API. You can use it by either selecting some text on the page and clicking the browser extension button or just clicking the browser extension button (in which case it will use the active tab's current URL). You can then select the type of abuse report and click the report button to send it to MSRC.
 
 ## Features
 - Easy and convenient way to report abuse originating from Microsoft online services
@@ -25,8 +25,11 @@ To use the extension, follow these steps:
 1. Click on the "Report" button
 1. The extension will validate and format your input and send it to the MSRC abuse API
 1. You will see a message indicating the status and response of your report
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+This extension is not authoried or maintained by Microsoft. It uses the Microsoft public abuse API only and is not affiliated with Microsoft in any way. Microsoft does not officially or unofficially support the use of this extension.
 
 ## References
 - [New and Improved Report Abuse Portal and API! - msrc-blog.microsoft.com](https://msrc-blog.microsoft.com/2021/02/01/new-and-improved-report-abuse-portal-and-api/)
